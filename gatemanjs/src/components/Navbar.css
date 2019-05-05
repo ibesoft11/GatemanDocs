@@ -1,5 +1,10 @@
+.navbar-title {
+  margin-left: 10px;
+  color: #FEB05E;
+}
 .navbar {
-  background-color: rgb(41, 15, 4);
+  background-color: rgb(31, 14, 7);
+  /*background-color: rgb(41, 15, 4);*/
   height: 50px;
 }
 .navbar-container {
@@ -11,7 +16,15 @@
     display: flex;
     flex-grow: 0;
     margin-left: auto;
-    margin-right: -1rem;
+    margin-right: 2rem;
+  }
+
+  @media (max-width:375px){
+    .navbar-menu {
+      display: flex;
+      flex-grow: 0;
+      margin-right: 0rem;
+    }
   }
 
 .navbar-menuItem {
@@ -23,7 +36,6 @@
 .navbar-menuLink {
     color: #FEB05E;;
     padding: 0 0.5rem;
-    margin: 0 0.5rem;
     text-decoration: none;
     font-weight: 300;
     letter-spacing: 0.4px;
@@ -33,3 +45,14 @@
     .navbar-menuLink:active {
       color: rgb(247, 247, 247);
     }
+@media (max-width:375px){
+  .navbar-menuLink {
+    color: #FEB05E;;
+    padding: 0 0.5rem;
+    text-decoration: none;
+    font-weight: 100;
+    letter-spacing: 0.4px;
+    transition: all 250ms ease-in-out;
+    font-size: smaller;
+}
+}

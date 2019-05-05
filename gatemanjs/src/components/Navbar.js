@@ -5,7 +5,8 @@ import '../components/Navbar.css';
 class Navbar extends Component {
     render() {
       return (
-    <nav className="navbar">
+    <div>
+      <nav className="navbar">
       <div className="container navbar-container">
           <ul className="navbar-menu">
               <li key={"home"} className="navbar-menuItem">
@@ -20,14 +21,12 @@ class Navbar extends Component {
               <li key={"home"} className="navbar-menuItem">
                 <a href='#' className="navbar-menuLink">Blog</a>
               </li>
-              <li key={"home"} className="navbar-menuItem">
-                <a href='#' className="navbar-menuLink">Fork</a>
-              </li>
           </ul>
       </div>
     </nav>
+    </div>
     );
-    }
+    } 
 }
 
 export default Navbar;
